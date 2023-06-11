@@ -1,0 +1,34 @@
+
+
+from paper1:
+
+time domain: min,max,mean,variance,skewness,kurtosis, zero crosing rate, linear correlation coefficient (pearson correlation coefficient) of eg x,y,z or mars_ch1,mars_ch2, ADD CREST FACTOR
+
+freq domain: 
+spectral centroid (1st central moment or weighted average of spectrum)
+max value
+min value
+mean of spectrum
+variance
+skewness
+kurtosis
+spectral roll off - k =0.85
+
+spektrogramm: time bin - default 256 samples with scipy.signal.spectrogram
+root mean square energy for each time bin
+spectral roll off for each time bin - k =0.85
+spectral centroid for each bn time bin
+
+-for each of these: mean, max, min, variance, skewness, kurtosis
+
+NOTE ON STFT:
+more libraries for feature extraction, constant window size means constant frequency detection. in the end it is the same as wavelet transform. for our use case, it is an stft anyways since the data from the sensors comes in live and evaluation is done live as well. ie when data streams in we  evaluate that 'bin' of time values until the next one comes. so normal fourier transform should be disregarded. wavelet transform is good for detecting small changes. but we are dealing with an almost constant signal. hilbert huang and wavelet is for non stationary data. we are dealing with stationary data
+
+supervised learning algorithms in literature:
+svm, random forest, nearest neighbour, bayes classifier
+
+
+
+
+spectrogram features: 
+http://zone.ni.com/reference/en-XX/help/372656B-01/lvasptconcepts/tfa_spectrogram_features/

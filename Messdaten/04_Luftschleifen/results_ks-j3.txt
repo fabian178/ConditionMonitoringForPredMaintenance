@@ -1,0 +1,91 @@
+All features: number of features: 45
+["t_mean---j3", "t_max---j3", "t_min---j3", "t_variance---j3", "t_skew---j3", "t_kurtosis---j3", "t_zero-crossing-rate---j3", "f_spectral-centroid---j3", "f_max-amplitude---j3", "f_f-of-max-amplitude---j3", "f_mean---j3", "f_var---j3", "f_skew---j3", "f_kurtosis---j3", "f_rolloff-f--k=0.85---j3", "tf_rmse-mean---j3", "tf_rmse-max---j3", "tf_rmse-min---j3", "tf_rmse-variance---j3", "tf_rmse-skew---j3", "tf_rmse-kurtosis---j3", "tf_spectral-rolloff-mean---j3", "tf_spectral-rolloff-max---j3", "tf_spectral-rolloff-min---j3", "tf_spectral-rolloff-variance---j3", "tf_spectral-rolloff-skew---j3", "tf_spectral-rolloff-kurtosis---j3", "tf_spectral-centroid-mean---j3", "tf_spectral-centroid-max---j3", "tf_spectral-centroid-min---j3", "tf_spectral-centroid-variance---j3", "tf_spectral-centroid-skew---j3", "tf_spectral-centroid-kurtosis---j3", "tf_highest-f-per-bin-mean---j3", "tf_highest-f-per-bin-max---j3", "tf_highest-f-per-bin-min---j3", "tf_highest-f-per-bin-variance---j3", "tf_highest-f-per-bin-skew---j3", "tf_highest-f-per-bin-kurtosis---j3", "tf_lowest-f-per-bin-mean---j3", "tf_lowest-f-per-bin-max---j3", "tf_lowest-f-per-bin-min---j3", "tf_lowest-f-per-bin-variance---j3", "tf_lowest-f-per-bin-skew---j3", "tf_lowest-f-per-bin-kurtosis---j3"]
+Accuracies and optimal parameters: 
+NNK : 0.452702702703
+SVM - lin : 0.682432432432
+RF : 0.824324324324
+NB : 0.472972972973
+["NNK", [{"p": 8, "leaf_size": 1}]]
+["SVM - lin", [{"C": 1, "tol": 0.0001, "intercept_scaling": 0.5, "dual": false, "fit_intercept": false}]]
+["RF", [{"warm_start": false, "bootstrap": false, "min_samples_leaf": 1, "n_estimators": 5, "min_samples_split": 2, "max_depth": 2}]]
+["NB", [{"priors": null}]]
+
+Next Feature Set:
+Only time features: number of features: 7
+["t_mean---j3", "t_max---j3", "t_min---j3", "t_variance---j3", "t_skew---j3", "t_kurtosis---j3", "t_zero-crossing-rate---j3"]
+Accuracies and optimal parameters: 
+NNK : 0.675675675676
+SVM - lin : 0.722972972973
+RF : 0.756756756757
+NB : 0.655405405405
+["NNK", [{"p": 4, "leaf_size": 1}]]
+["SVM - lin", [{"C": 4, "tol": 0.1, "intercept_scaling": 0.5, "dual": true, "fit_intercept": false}]]
+["RF", [{"warm_start": false, "bootstrap": false, "min_samples_leaf": 2, "n_estimators": 10, "min_samples_split": 3, "max_depth": 1}]]
+["NB", [{"priors": null}]]
+
+Next Feature Set:
+Only frequency features: number of features: 8
+["f_spectral-centroid---j3", "f_max-amplitude---j3", "f_f-of-max-amplitude---j3", "f_mean---j3", "f_var---j3", "f_skew---j3", "f_kurtosis---j3", "f_rolloff-f--k=0.85---j3"]
+Accuracies and optimal parameters: 
+NNK : 0.608108108108
+SVM - lin : 0.587837837838
+RF : 0.675675675676
+NB : 0.5
+["NNK", [{"p": 8, "leaf_size": 1}]]
+["SVM - lin", [{"C": 0.0625, "tol": 1e-05, "intercept_scaling": 0.5, "dual": false, "fit_intercept": true}]]
+["RF", [{"warm_start": false, "bootstrap": true, "min_samples_leaf": 3, "n_estimators": 20, "min_samples_split": 0.5, "max_depth": 3}]]
+["NB", [{"priors": null}]]
+
+Next Feature Set:
+Only time-freq features: number of features: 30
+["tf_rmse-mean---j3", "tf_rmse-max---j3", "tf_rmse-min---j3", "tf_rmse-variance---j3", "tf_rmse-skew---j3", "tf_rmse-kurtosis---j3", "tf_spectral-rolloff-mean---j3", "tf_spectral-rolloff-max---j3", "tf_spectral-rolloff-min---j3", "tf_spectral-rolloff-variance---j3", "tf_spectral-rolloff-skew---j3", "tf_spectral-rolloff-kurtosis---j3", "tf_spectral-centroid-mean---j3", "tf_spectral-centroid-max---j3", "tf_spectral-centroid-min---j3", "tf_spectral-centroid-variance---j3", "tf_spectral-centroid-skew---j3", "tf_spectral-centroid-kurtosis---j3", "tf_highest-f-per-bin-mean---j3", "tf_highest-f-per-bin-max---j3", "tf_highest-f-per-bin-min---j3", "tf_highest-f-per-bin-variance---j3", "tf_highest-f-per-bin-skew---j3", "tf_highest-f-per-bin-kurtosis---j3", "tf_lowest-f-per-bin-mean---j3", "tf_lowest-f-per-bin-max---j3", "tf_lowest-f-per-bin-min---j3", "tf_lowest-f-per-bin-variance---j3", "tf_lowest-f-per-bin-skew---j3", "tf_lowest-f-per-bin-kurtosis---j3"]
+Accuracies and optimal parameters: 
+NNK : 0.452702702703
+SVM - lin : 0.689189189189
+RF : 0.709459459459
+NB : 0.466216216216
+["NNK", [{"p": 8, "leaf_size": 1}]]
+["SVM - lin", [{"C": 1, "tol": 0.0001, "intercept_scaling": 0.5, "dual": false, "fit_intercept": false}]]
+["RF", [{"warm_start": false, "bootstrap": false, "min_samples_leaf": 1, "n_estimators": 5, "min_samples_split": 3, "max_depth": null}]]
+["NB", [{"priors": null}]]
+
+Next Feature Set:
+Extratree features: number of features: 41
+["t_mean---j3", "tf_highest-f-per-bin-kurtosis---j3", "tf_highest-f-per-bin-mean---j3", "tf_lowest-f-per-bin-mean---j3", "tf_rmse-kurtosis---j3", "f_skew---j3", "tf_spectral-centroid-min---j3", "tf_spectral-rolloff-mean---j3", "t_max---j3", "tf_spectral-centroid-variance---j3", "t_zero-crossing-rate---j3", "tf_lowest-f-per-bin-variance---j3", "tf_spectral-centroid-skew---j3", "tf_rmse-skew---j3", "f_spectral-centroid---j3", "f_rolloff-f--k=0.85---j3", "tf_spectral-rolloff-skew---j3", "t_min---j3", "tf_highest-f-per-bin-max---j3", "tf_rmse-min---j3", "tf_lowest-f-per-bin-skew---j3", "tf_rmse-max---j3", "t_skew---j3", "f_mean---j3", "tf_highest-f-per-bin-variance---j3", "f_kurtosis---j3", "tf_lowest-f-per-bin-kurtosis---j3", "f_max-amplitude---j3", "tf_spectral-centroid-max---j3", "f_var---j3", "tf_spectral-rolloff-kurtosis---j3", "tf_rmse-mean---j3", "tf_spectral-centroid-kurtosis---j3", "tf_spectral-rolloff-max---j3", "t_kurtosis---j3", "tf_spectral-rolloff-variance---j3", "t_variance---j3", "tf_spectral-rolloff-min---j3", "f_f-of-max-amplitude---j3", "tf_spectral-centroid-mean---j3", "tf_highest-f-per-bin-skew---j3"]
+Accuracies and optimal parameters: 
+NNK : 0.452702702703
+SVM - lin : 0.682432432432
+RF : 0.790540540541
+NB : 0.472972972973
+["NNK", [{"p": 8, "leaf_size": 1}]]
+["SVM - lin", [{"C": 0.0625, "tol": 0.0001, "intercept_scaling": 0.5, "dual": false, "fit_intercept": false}]]
+["RF", [{"warm_start": false, "bootstrap": false, "min_samples_leaf": 3, "n_estimators": 5, "min_samples_split": 3, "max_depth": 2}]]
+["NB", [{"priors": null}]]
+
+Next Feature Set:
+Recursive elimination features: number of features: 41
+["t_mean---j3", "tf_highest-f-per-bin-kurtosis---j3", "tf_highest-f-per-bin-mean---j3", "tf_lowest-f-per-bin-mean---j3", "tf_rmse-kurtosis---j3", "f_skew---j3", "tf_spectral-centroid-min---j3", "t_max---j3", "tf_spectral-centroid-variance---j3", "t_zero-crossing-rate---j3", "tf_lowest-f-per-bin-variance---j3", "tf_spectral-centroid-skew---j3", "tf_rmse-skew---j3", "f_spectral-centroid---j3", "f_rolloff-f--k=0.85---j3", "tf_spectral-rolloff-skew---j3", "tf_rmse-min---j3", "tf_lowest-f-per-bin-skew---j3", "tf_rmse-max---j3", "t_skew---j3", "f_mean---j3", "tf_highest-f-per-bin-variance---j3", "f_kurtosis---j3", "tf_lowest-f-per-bin-kurtosis---j3", "f_max-amplitude---j3", "tf_spectral-centroid-max---j3", "f_var---j3", "tf_spectral-rolloff-kurtosis---j3", "tf_rmse-mean---j3", "tf_spectral-centroid-kurtosis---j3", "tf_spectral-rolloff-max---j3", "t_kurtosis---j3", "tf_spectral-rolloff-variance---j3", "t_variance---j3", "tf_spectral-rolloff-min---j3", "f_f-of-max-amplitude---j3", "tf_spectral-centroid-mean---j3", "tf_highest-f-per-bin-skew---j3", "t_min---j3", "tf_highest-f-per-bin-max---j3", "tf_spectral-rolloff-mean---j3"]
+Accuracies and optimal parameters: 
+NNK : 0.452702702703
+SVM - lin : 0.682432432432
+RF : 0.797297297297
+NB : 0.472972972973
+["NNK", [{"p": 8, "leaf_size": 1}]]
+["SVM - lin", [{"C": 0.0625, "tol": 0.0001, "intercept_scaling": 0.5, "dual": false, "fit_intercept": false}]]
+["RF", [{"warm_start": true, "bootstrap": false, "min_samples_leaf": 2, "n_estimators": 20, "min_samples_split": 3, "max_depth": 2}]]
+["NB", [{"priors": null}]]
+
+Next Feature Set:
+F-Ratio features: number of features: 41
+["t_mean---j3", "tf_rmse-variance---j3", "tf_rmse-mean---j3", "tf_rmse-min---j3", "tf_rmse-max---j3", "t_skew---j3", "t_zero-crossing-rate---j3", "f_skew---j3", "t_kurtosis---j3", "t_variance---j3", "tf_lowest-f-per-bin-kurtosis---j3", "tf_highest-f-per-bin-skew---j3", "tf_lowest-f-per-bin-skew---j3", "tf_spectral-rolloff-skew---j3", "tf_spectral-centroid-skew---j3", "t_max---j3", "f_kurtosis---j3", "tf_highest-f-per-bin-kurtosis---j3", "tf_rmse-skew---j3", "tf_spectral-rolloff-kurtosis---j3", "tf_spectral-centroid-kurtosis---j3", "f_var---j3", "t_min---j3", "tf_spectral-centroid-variance---j3", "tf_rmse-kurtosis---j3", "f_mean---j3", "f_rolloff-f--k=0.85---j3", "f_spectral-centroid---j3", "f_max-amplitude---j3", "tf_lowest-f-per-bin-min---j3", "tf_spectral-rolloff-mean---j3", "tf_spectral-centroid-mean---j3", "tf_highest-f-per-bin-mean---j3", "tf_spectral-centroid-max---j3", "tf_spectral-rolloff-max---j3", "tf_spectral-centroid-min---j3", "tf_highest-f-per-bin-min---j3", "tf_highest-f-per-bin-max---j3", "f_f-of-max-amplitude---j3", "tf_spectral-rolloff-min---j3", "tf_lowest-f-per-bin-mean---j3"]
+Accuracies and optimal parameters: 
+NNK : 0.628378378378
+SVM - lin : 0.736486486486
+RF : 0.804054054054
+NB : 0.47972972973
+["NNK", [{"p": 1, "leaf_size": 1}]]
+["SVM - lin", [{"C": 0.0625, "tol": 1e-05, "intercept_scaling": 0.5, "dual": false, "fit_intercept": false}]]
+["RF", [{"warm_start": false, "bootstrap": false, "min_samples_leaf": 3, "n_estimators": 5, "min_samples_split": 3, "max_depth": 2}]]
+["NB", [{"priors": null}]]
+
+Next Feature Set:
